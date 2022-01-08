@@ -33,6 +33,10 @@ li {
   font-size: 18px;
   font-weight: 700;
 }
+.pages:hover {
+  padding-bottom: 7px;
+  border-bottom: 2px solid white;
+}
 .logo-l {
   text-decoration: none;
   font-size: 14px;
@@ -66,14 +70,14 @@ h1 {
   max-width: 410px;
   margin: 40px 0 48px 0;
 }
-.button {
+.read {
   display: flex;
   display: inline;
-  align-items: center;
-  gap: 14px;
   text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
 }
-.arrow {
+.arrow-i {
   position: relative;
   top: 7px;
   left: 7px;
@@ -129,4 +133,12 @@ footer{
   text-align: center;
   margin-bottom: 24px;
   font-size: 14px;
+}
+.created {
+  color: #A9A9A9;
+}
+.villalba {
+  text-decoration: none;
+  font-weight: 700;
+  color: #A9A9A9;
 }
