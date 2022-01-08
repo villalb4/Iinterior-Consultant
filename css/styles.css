@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:ital,wght@0,400;0,700;1,500&family=Nunito:wght@500;600;700;900&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+body {
+  background-color: #181719;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 42px 77px;
+}
+.pages-l {
+  display: flex;
+}
+ul {
+  display: flex;
+  gap: 86px;
+}
+li {
+  list-style: none;
+}
+.pages {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+.logo-l {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Crimson Pro";
+  padding: 8px;
+  border: 1px solid white;
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 131px 77px 70px 77px;
+  justify-content: space-between;
+  align-items: center;
+}
+.all-text {
+  position: relative;
+  bottom: 70px;
+}
+.interior {
+  width: 737px;
+}
+h1 {
+  font-family: "Lora";
+  font-size: 48px;
+  font-weight: 500;
+}
+.descript {
+  font-size: 24px;
+  max-width: 410px;
+  margin: 40px 0 48px 0;
+}
+.button {
+  display: flex;
+  display: inline;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+.arrow {
+  position: relative;
+  top: 7px;
+  left: 7px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.perfil-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 410px;
+  background-color: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  right: 32px;
+  bottom: 76px;
+  padding: 18px 97px 34px 26px;
+}
+.text-name {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 25px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+}
+.img-p {
+  width: 50px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.job {
+  font-size: 12px;
+  color: #828282;
+}
+h2 {
+  font-size: 24px;
+  font-family: "Lora";
+  font-weight: 400;
+  line-height: 30,72px;
+  max-width: 287px;
+}
+
+
+footer{
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
