@@ -11,12 +11,17 @@ body {
   background-color: #181719;
 }
 
-
+header {
+  display: flex;
+  justify-content: center;
+}
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 42px 77px;
+  max-width: 1440px;
+  width: 100%;
+  padding: 46px 77px;
 }
 .pages-l {
   display: flex;
@@ -29,18 +34,19 @@ li {
   list-style: none;
 }
 .pages {
+  font-weight: 500;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
 }
-.indicator {
+/* .indicator {
   position: absolute;
   top: 72px;
   width: 0;
   height: 3px;
   background-color: white;
   transition: 400ms ease-in-out left, 400ms ease-in-out width;
-}
+} */
 .logo-l {
   text-decoration: none;
   font-size: 14px;
@@ -48,21 +54,31 @@ li {
   padding: 8px;
   border: 1px solid white;
 }
+.hamb {
+  display: none;
+}
 
-
-main {
+.container {
   display: flex;
   justify-content: center;
-  margin: 131px 77px 70px 77px;
+}
+main {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  gap: 50px;
+  margin: 131px 0 70px 0;
+  padding: 0 77px;
+  max-width: 1440px;
+  width: 100%;
 }
 .all-text {
-  position: relative;
-  bottom: 70px;
+  margin-top: 136px;
 }
 .interior {
-  width: 737px;
+  width: 100%;
+  max-width: 737px;
+  height: 100%;
 }
 h1 {
   font-family: "Lora";
@@ -71,7 +87,8 @@ h1 {
 }
 .descript {
   font-size: 24px;
-  max-width: 410px;
+  width: 410px;
+  line-height: 29px;
   margin: 40px 0 48px 0;
 }
 .read {
@@ -133,16 +150,93 @@ h2 {
 }
 
 
-footer{
-  text-align: center;
-  margin-bottom: 24px;
-  font-size: 14px;
-}
+
 .created {
+  text-align: center;
   color: #A9A9A9;
+  margin-bottom: 24px;
 }
 .villalba {
   text-decoration: none;
   font-weight: 700;
   color: #A9A9A9;
+}
+
+
+@media screen and (max-width: 1199px){
+
+  ul {
+    gap: 50px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .all-text {
+    position: static;
+    margin-top: 0;
+  }
+  .interior {
+    max-width: 639px;
+  }
+ }
+
+@media screen and (max-width: 769px) {
+  nav {
+    padding: 19px 12px;
+  }
+  .pages-l {
+    display: none
+  }
+  .hamb {
+    display: inline;
+    width: 28.5px;
+    fill: white;
+    cursor: pointer;
+  }
+
+  main {
+    margin: 38px 12px 0px 12px;
+    gap: 25px;
+    justify-content: none;
+    width: 680px;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+  .all-text {
+    margin-top: 0;
+  }
+  .descript {
+    font-size: 14px;
+    width: 250px;
+    margin: 25px 0 ;
+    line-height: 17px;
+  }
+  .read {
+    font-size: 14px;
+  }
+  .interior {
+    width: 100%;
+    max-width: 616px;
+  }
+
+  .perfil-card{
+    width: 300px;
+    right: 11.5px;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .job {
+    font-size: 10px;
+  }
+  h2 {
+    font-size: 18px;
+    width: 210px;
+  }
 }
